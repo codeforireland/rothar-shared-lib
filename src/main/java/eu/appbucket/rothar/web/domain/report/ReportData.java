@@ -6,10 +6,10 @@ public class ReportData {
 
 	private Integer assetId;
 	private Integer reporterId;
+	private String reporterUuid;
 	private double latitude;
 	private double longitude;
 	private Date created;
-	private String url;
 
 	public Integer getReporterId() {
 		return reporterId;
@@ -50,12 +50,12 @@ public class ReportData {
 	public void setCreated(Date created) {
 		this.created = created;
 	}
-
-	public String getUrl() {
-		return url;
+	
+	public String getReporterUuid() {
+		return reporterUuid;
 	}
-
-	public void setUrl(String url) {
-		this.url = url;
+	
+	public void setReporterUuid(String reporterUuid) {
+		this.reporterUuid = reporterUuid;
 	}
 }
